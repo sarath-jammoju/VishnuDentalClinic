@@ -1,0 +1,92 @@
+:root {
+    --primary-font: 'Poppins', sans-serif;
+    --secondary-font: "Cabin", sans-serif;
+    --footerbg-color: #142F43;
+    --btn-color: linear-gradient(45deg, #0000FF, #1E90FF);
+    --btn-hover-color: #142F43;
+    --primary-text-color: #fff;
+    --secondary-text-color: #f7f7f7;
+    --section-padding: 2.5rem 1.25rem; /* 50px 20px */
+    --section-gap: 2.25rem; /* 20px */
+    --heading-size: 3.5rem;
+    --subheading-size: 1.5rem;
+    --paragraph-size: 1.1rem;
+  }
+
+
+.services-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px auto;
+}
+
+.service-boxes-heading {
+    font-size: 2.5rem;
+    font-family: var(--primary-font);
+    margin-bottom: 8px;
+}
+
+.services-boxes-para {
+    font-size: 1.75rem;
+    font-family: var(--secondary-font);
+    font-weight: lighter;
+    text-align: justify;
+    line-height: 24px;
+}
+
+.service-boxes {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 60px 135px;
+    gap: 50px;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.service-box-1,
+.service-box-2,
+.service-box-3,
+.service-box-4,
+.service-box-5,
+.service-box-6 {
+    position: relative;
+    display: flex;
+    gap: 40px;
+    opacity: 0;
+    transform: translateX(300px); /* Default starting position for animation */
+    transition: opacity 1.2s ease-out, transform 1.2s ease-out; /* Smooth transition */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+    padding: 16px 36px;
+    border-radius: 18px;
+}
+.service-box-content
+{
+    margin-top: 32px;
+}
+
+.service-img {
+    height: 247px;
+    width: 410px;
+    border-radius: 18px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.service-box-subheading {
+    font-size: 1.5rem;
+    font-family: var(--secondary-font);
+    margin-bottom: 14px;
+    border-bottom: 1px solid #000;
+}
+
+.service-box-para {
+    font-size: 1.15rem;
+    font-family: var(--secondary-font);
+    font-weight: lighter;
+    text-align: justify;
+    margin-top: 12px;
+    font-weight: 300;
+}

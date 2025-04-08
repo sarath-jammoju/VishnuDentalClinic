@@ -1,0 +1,329 @@
+
+
+.contact-page {
+  font-family: var(--primary-font);
+  color: #333;
+}
+
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 550px;
+  margin-top: 90px;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+
+.hero-text h2 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact-form-section {
+  padding: 40px 20px;
+  max-width: 600px;
+  margin: auto;
+}
+
+.contact-form-section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  color: #222;
+  margin-top: -10px;
+  font-family: var(--secondary-font);
+  font-weight: 600;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Input, Textarea, Select, Date, Tel fields */
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  resize: vertical;
+  font-family: var(--secondary-font)
+}
+
+.contact-form input[type="date"],
+.contact-form input[type="tel"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: white;
+  color: #333;
+}
+
+.contact-form select {
+  background-color: white;
+  color: #333;
+}
+
+/* Submit button */
+.contact-form button {
+  padding: 12px;
+  background-color: #0077cc;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #005fa3;
+}
+
+/* Success message */
+.success-message {
+  text-align: center;
+  color: green;
+  margin-top: 20px;
+  font-weight: 500;
+}
+
+@keyframes slideUpFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+/* ===============================================================
+                  Responsiveness
+=================================================================*/
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .hero-section {
+    height: 250px;
+    margin-top: 70px;
+  }
+
+  .hero-section .hero-image{
+    margin-top: 35px;
+    height: 180px;
+    width: 100%;
+  }
+  .hero-text h1 {
+    font-size: 2rem;
+    padding: 0 10px;
+  }
+
+  .contact-form-section {
+    padding: 10px 15px;
+  }
+
+  .contact-form-section h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+
+  .contact-form {
+    gap: 12px;
+  }
+
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form select {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .contact-form button {
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  .success-message {
+    font-size: 14px;
+    margin-top: 15px;
+  }
+}
+
+
+/* ================================================================ */
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .hero-section {
+    height: 330px;
+    margin-top: 80px;
+  }
+
+  .hero-section .hero-image {
+    margin-top: 25px;
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .hero-text h1 {
+    font-size: 2.5rem;
+    padding: 0 20px;
+  }
+
+  .contact-form-section {
+    padding: 20px 25px;
+    max-width: 90%;
+    margin-top: -30px;
+  }
+
+  .contact-form-section h2 {
+    font-size: 24px;
+    margin-bottom: 25px;
+  }
+
+  .contact-form {
+    gap: 14px;
+  }
+
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form select {
+    font-size: 15px;
+    padding: 12px;
+  }
+
+  .contact-form button {
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  .success-message {
+    font-size: 15px;
+    margin-top: 18px;
+  }
+}
+
+/* =============================================================== */
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .hero-section {
+    height: 380px;
+    /* margin-top: 100px; */
+  }
+
+  .hero-section .hero-image {
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .hero-text h2 {
+    font-size: 2.8rem;
+    padding: 0 25px;
+  }
+
+  .contact-form-section {
+    padding: 30px 30px;
+    max-width: 70%;
+    margin: auto;
+  }
+
+  .contact-form-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 28px;
+  }
+
+  .contact-form {
+    gap: 16px;
+  }
+
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form select {
+    font-size: 16px;
+    padding: 14px;
+  }
+
+  .contact-form button {
+    font-size: 17px;
+    padding: 14px;
+  }
+
+  .success-message {
+    font-size: 16px;
+    margin-top: 20px;
+  }
+}
+
+
+/* ================================================================== */
+
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  .hero-section {
+    height: 480px;
+    margin-top: 90px;
+  }
+
+  .hero-section .hero-image {
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .hero-text h2 {
+    font-size: 3rem;
+    padding: 0 30px;
+  }
+
+  .contact-form-section {
+    padding: 50px 40px;
+    max-width: 55%;
+    margin: auto;
+  }
+
+  .contact-form-section h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+
+  .contact-form {
+    gap: 18px;
+  }
+
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form select {
+    font-size: 17px;
+    padding: 16px;
+  }
+
+  .contact-form button {
+    font-size: 18px;
+    padding: 16px;
+  }
+
+  .success-message {
+    font-size: 17px;
+    margin-top: 22px;
+  }
+}
+

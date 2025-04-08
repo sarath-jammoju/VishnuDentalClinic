@@ -1,0 +1,292 @@
+.gallery-container {
+  position: relative;
+  width: 100%;
+  padding: 1rem 1rem;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.gallery-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #001253;
+  z-index: -1;
+}
+
+.gallery-container .text,
+.gallery-carousel {
+  position: relative;
+  z-index: 2;
+}
+
+.gallery-carousel {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  position: relative;
+}
+
+.carousel-slide {
+  padding: 10px;
+  transition: transform 0.3s ease;
+  display: flex !important;
+  justify-content: center;
+}
+
+.carousel-slide img {
+  width: 350px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 1rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.5s ease-in-out;
+  transform: scale(0.75);
+}
+
+.slick-center .carousel-slide img {
+  transform: scale(1.05);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+.slick-dots li button:before {
+  font-size: 12px;
+  color: #999;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #007bff;
+}
+
+.slick-prev,
+.slick-next {
+  z-index: 1;
+  width: 50px;
+  height: 50px;
+  color: #fff;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 28px;
+  color: #fff;
+}
+
+.text {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-family: var(--primary-font);
+}
+
+.text h2 {
+  font-size: 2.5rem;
+  color: var(--heading-color, #fff);
+  margin-bottom: 0.5rem;
+  margin-top: -25px;
+}
+
+.text p {
+  font-size: 1.1rem;
+  color: #fff;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+
+/* ==================================================
+                Responsiveness
+====================================================*/
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .gallery-container {
+    padding: 0.5rem;
+  }
+
+  .gallery-carousel {
+    padding: 1rem 0.5rem;
+  }
+
+  .carousel-slide img {
+    width: 250px;
+    height: 300px;
+    transform: scale(1);
+  }
+  
+  .slick-center .carousel-slide img {
+    transform: scale(1.03);
+  }
+  .carousel-slide {
+    padding: 10px;
+  }
+
+  .text h2 {
+    font-size: 1.8rem;
+    margin-top: -15px;
+    margin-bottom: 0.8rem;
+  }
+
+  .text p {
+    font-size: 0.95rem;
+    padding: 0 10px;
+  }
+
+  .slick-prev,
+  .slick-next {
+    width: 50px;
+    height: 50px;
+    margin: 0px 25px 0px 25px;
+  }
+
+  .slick-prev:before,
+  .slick-next:before {
+    font-size: 24px;
+  }
+}
+
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .gallery-container {
+    padding: 1rem;
+  }
+
+  .gallery-carousel {
+    padding: 1.5rem 1rem;
+  }
+
+  .carousel-slide img {
+    width: 300px;
+    height: 350px;
+    transform: scale(1);
+  }
+
+  .slick-center .carousel-slide img {
+    transform: scale(1.05);
+  }
+
+  .carousel-slide {
+    padding: 12px;
+  }
+
+  .text h2 {
+    font-size: 2rem;
+    margin-top: -20px;
+    margin-bottom: 1rem;
+  }
+
+  .text p {
+    font-size: 1rem;
+    padding: 0 20px;
+  }
+
+  .slick-prev,
+  .slick-next {
+    width: 50px;
+    height: 50px;
+    margin: 0 30px;
+  }
+
+  .slick-prev:before,
+  .slick-next:before {
+    font-size: 26px;
+  }
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .gallery-container {
+    padding: 1.5rem;
+  }
+
+  .gallery-carousel {
+    padding: 2rem 1.5rem;
+  }
+
+  .carousel-slide img {
+    width: 320px;
+    height: 370px;
+  }
+
+  .slick-center .carousel-slide img {
+    transform: scale(1.06);
+  }
+
+  .carousel-slide {
+    padding: 14px;
+  }
+
+  .text h2 {
+    font-size: 2.2rem;
+    margin-top: -22px;
+    margin-bottom: 1.2rem;
+  }
+
+  .text p {
+    font-size: 1.05rem;
+    padding: 0 30px;
+  }
+
+  .slick-prev,
+  .slick-next {
+    width: 50px;
+    height: 50px;
+    margin: 0 35px;
+  }
+
+  .slick-prev:before,
+  .slick-next:before {
+    font-size: 28px;
+  }
+}
+
+
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  .gallery-container {
+    padding: 2rem;
+  }
+
+  .gallery-carousel {
+    padding: 2.5rem 2rem;
+  }
+
+  .carousel-slide img {
+    width: 340px;
+    height: 400px;
+  }
+
+  .slick-center .carousel-slide img {
+    transform: scale(1.08);
+  }
+
+  .carousel-slide {
+    padding: 16px;
+    display: flex !important;
+    justify-content: center;
+  }
+
+  .text h2 {
+    font-size: 2.4rem;
+    margin-top: -40px;
+    margin-bottom: 1.5rem;
+  }
+
+  .text p {
+    font-size: 1.1rem;
+    padding: 0 30px;
+    margin-top: -20px;
+  }
+
+  .slick-prev,
+  .slick-next {
+    width: 55px;
+    height: 55px;
+    margin: 0 40px;
+  }
+
+  .slick-prev:before,
+  .slick-next:before {
+    font-size: 30px;
+  }
+}

@@ -1,0 +1,1050 @@
+
+/* ================= Hero Section ================= */
+.hero-container {
+    position: relative;
+    width: 99vw;
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: var(--primary-font);
+  }
+  
+  /* Background Video */
+  .video-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+  }
+  
+  .hero-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+  }
+  
+  /* Hero Text Overlay */
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--primary-text-color);
+    background: rgba(0, 0, 0, 0.4);
+    padding: 2.5rem 1.25rem;
+    z-index: 2;
+  
+    opacity: 0;
+    transform: translateY(3.125rem);
+    animation: fadeInUp 1.2s ease-out forwards;
+    margin-bottom: 18.75rem; /* 300px */
+  }
+  
+  .hero-overlay h1 {
+    font-family: var(--primary-font);
+    font-size: var(--heading-size);
+    font-weight: 600;
+    margin: -30px 0px 0.9375rem 0px;
+}
+  
+  .hero-overlay p {
+    font-size: var(--subheading-size);
+    margin-bottom: 2.25rem;
+    width: 60%;
+  }
+  
+  .hero-button {
+    background: var(--btn-color);
+    color: var(--primary-text-color);
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background 0.3s;
+    border: none;
+    font-size: 1.5rem;
+  }
+  
+  .hero-button:hover {
+    background-color: var(--btn-hover-color);
+  }
+  
+  /* ================= IMAGE SECTION ================= */
+  .image-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--section-gap);
+    max-width: 80vw;
+    width: 100%;
+    justify-content: center;
+    margin: 0 auto;
+    padding: var(--section-padding);
+    position: relative;
+    z-index: 5;
+    margin-top: 37.5rem; 
+  }
+  
+  .image-container {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    color: black;
+    width: 30%;
+    min-height: 15.625rem; 
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
+    border-radius: 0.625rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease-in-out;  
+    opacity: 0;
+    transform: translateY(3.125rem);
+    animation: fadeInUp 1.2s ease-out forwards;
+    animation-delay: 0.3s;
+    padding: 0px 0px 1rem 0px;
+  }
+
+  .image-container .image-text{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    font-family: var(--secondary-font);
+    font-size: 1.2rem;
+    font-weight: 450;
+    padding: 5px;
+  }
+
+  /* ================= ANIMATION ================= */
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(3.125rem);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+
+
+  /* ================= CLINIC SECTION ================= */
+  .clinic-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--section-padding);
+    font-family: var(--primary-font);
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: var(--section-gap);
+  }
+  
+  /* Grid Row 1 - Two Columns */
+  .clinic-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: start;
+  }
+  .clinic-content h1{
+    font-family: var(--secondary-font);
+    font-size: 3.0rem;
+    font-family: 500;
+  }
+
+  .clinic-content .vishnuDental{
+    font-family: var(--primary-font);
+    width: 70%;
+    font-size: 4rem;
+    font-family: 500;
+    color: #1e90ff;
+  }
+  
+  .clinic-text{
+    width: 100%;
+    margin: 15px 75px 0px 0px;
+    font-family: var(--secondary-font);
+    font-size: 1.1rem;
+    font-weight: 450;
+    color: #333;
+  }
+
+  .clinic-stats {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    font-size: 3rem;
+  }
+  
+  .stat h2 {
+    font-size: 3rem;
+    font-family: var(--secondary-font);
+    font-weight: 900;
+    color: #1e90ff;
+    margin: 25px 150px 0px 0px;
+  }
+  
+  .stat p {
+    font-size: var(--paragraph-size);
+    color: #333;
+    font-family: var(--secondary-font);
+  }
+  
+  /* Grid Row 2 - Full Width Image */
+  .clinic-fullwidth-image-container {
+    width: 100%;
+  }
+  
+  .clinic-fullwidth-image {
+    width: 100%;
+    height: 55vh;
+    object-fit: cover;
+    border-radius: 3rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.32);
+  }
+  
+/* ======================================================= */
+ 
+.dental-care-section {
+    padding: var(--section-padding);
+    font-family: var(--primary-font);
+    background-color: #fff;
+    bottom: 100px;
+  }
+  
+  .dental-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .dental-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: var(--heading-color);
+  }
+  
+  .dental-title span {
+    color: var(--highlight-color);
+  }
+  
+  .dental-description {
+    max-width: 700px;
+    margin: 1rem auto 3rem;
+    color: #333;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  .dental-card-container {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .dental-card {
+    background-color: transparent;
+    border-radius: 1rem;
+    overflow: visible; 
+    max-width: 500px;
+    position: relative;
+    text-align: center;
+    padding-bottom: 120px; 
+    box-shadow: none;
+  }
+  
+  
+  .image-wrapper {
+    position: relative;
+  }
+  
+  .dental-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    border-radius: 1rem;
+  }
+  
+  .dental-card-text.semi_circle {
+    position: absolute;
+    bottom: -120px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #ffffff;
+    border-top-left-radius: 150px 80px;
+    border-top-right-radius: 150px 80px;
+    padding: 2rem 1.5rem;
+    width: 90%;
+    box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    color: #111;
+  }
+  
+  .dental-card-text.semi_circle h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    font-family: var(--primary-font);
+    color: var(--heading-color);
+    margin-bottom: 0.5rem;
+  }
+  
+  .dental-card-text.semi_circle p {
+    font-size: 1rem;
+    color: #333;
+    font-family: var(--secondary-font);
+    line-height: 1.6;
+    margin: 0;
+  }
+  
+   
+  /* Animation for carousel rotation */
+  @keyframes rotate {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(360deg);
+    }
+  }
+  
+  
+  /* ============================================
+              Responsiveness
+  ==============================================*/
+  
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    .hero-container {
+      width: 100vw;
+      min-height: 100vh;
+      padding: 0px;
+    }
+  
+    .video-wrapper {
+      width: 100%;
+      height: 100vh;
+    }
+  
+    .hero-video {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+    }
+  
+    .hero-overlay {
+      padding: 16px;
+      margin-bottom: 0px;
+      height: 400px;
+    }
+  
+    .hero-overlay h1 {
+      font-size: 28px; /* 1.75rem */
+      margin: 120px 0px 16px 0px;
+    }
+  
+    .hero-overlay p {
+      font-size: 16px; /* 1rem */
+      width: 90%;
+      margin-bottom: 24px; /* 1.5rem */
+    }
+  
+    .hero-button {
+      margin-top: -50px;
+      font-size: 16px; /* 1rem */
+      padding: 8px 20px; /* 0.5rem 1.25rem */
+    } 
+    .image-container {
+      display: none;
+    }
+
+
+    .clinic-container {
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      margin-top: -320px;
+    }
+  
+    .clinic-content {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+  
+    .clinic-content h1 {
+      font-size: 1.8rem;
+      font-weight: 500;
+      text-align: left;
+    }
+  
+    .clinic-content .vishnuDental {
+      width: 100%;
+      font-size: 2.2rem;
+      font-weight: 500;
+      color: #1e90ff;
+      text-align: left;
+    }
+  
+    .clinic-text {
+      width: 100%;
+      margin-top: -10px;
+      font-size: 1rem;
+      font-weight: 400;
+      color: #333;
+      text-align: justify;
+    }
+  
+    .clinic-stats {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;   
+      align-items: center;       
+      gap: 1rem;
+      font-size: 2rem;
+      text-align: center;
+      margin: 20px auto 0 auto;  
+    }
+  
+    .stat h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin: 0;
+      color: #1e90ff;
+    }
+  
+    .stat p {
+      font-size: 1rem;
+    }
+  
+    .clinic-fullwidth-image-container {
+      width: 100%;
+    }
+  
+    .clinic-fullwidth-image {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 1.5rem;
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    }
+
+    .dental-care-section {
+      padding: 16px;
+      bottom: 0;
+    }
+  
+    .dental-title {
+      font-size: 1.8rem;
+      font-weight: 700;
+    }
+  
+    .dental-description {
+      max-width: 100%;
+      font-size: 1rem;
+      padding: 0 8px;
+      margin: 1rem 0 2rem;
+    }
+  
+    .dental-card-container {
+      flex-direction: column;
+      gap: 2rem;
+      align-items: center;
+    }
+  
+    .dental-card {
+      max-width: 100%;
+      padding-bottom: 100px;
+    }
+  
+    .dental-image {
+      height: 200px;
+      width: auto;
+      border-radius: 1rem;
+    }
+  
+    .dental-card-text.semi_circle {
+      bottom: -100px;
+      padding: 1.5rem 1rem;
+      width: 90%;
+      border-top-left-radius: 120px 60px;
+      border-top-right-radius: 120px 60px;
+    }
+  
+    .dental-card-text.semi_circle h3 {
+      font-size: 1.1rem;
+    }
+  
+    .dental-card-text.semi_circle p {
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+  }
+  
+
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    .hero-container {
+      width: 100vw;
+      min-height: 100vh;
+      padding: 0px;
+    }
+  
+    .video-wrapper {
+      width: 100%;
+      height: 100vh;
+    }
+  
+    .hero-video {
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+    }
+  
+    .hero-overlay {
+      padding: 24px;
+      margin-bottom: 0px;
+      height: 500px;
+    }
+  
+    .hero-overlay h1 {
+      font-size: 36px; /* Slightly larger for tablets */
+      margin: 160px 0px 24px 0px;
+    }
+  
+    .hero-overlay p {
+      font-size: 18px;
+      width: 85%;
+      margin-bottom: 32px;
+    }
+  
+    .hero-button {
+      margin-top: -40px;
+      font-size: 18px;
+      padding: 10px 24px;
+    }
+  
+    .image-container {
+      display: none;
+    }
+
+
+    .clinic-container {
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      margin-top: -200px;
+    }
+  
+    .clinic-content {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+  
+    .clinic-content h1 {
+      font-size: 2.2rem;
+      font-weight: 600;
+      text-align: left;
+    }
+  
+    .clinic-content .vishnuDental {
+      width: 100%;
+      font-size: 2.8rem;
+      font-weight: 600;
+      color: #1e90ff;
+      text-align: left;
+    }
+  
+    .clinic-text {
+      width: 100%;
+      margin-top: -8px;
+      font-size: 1.1rem;
+      font-weight: 400;
+      color: #333;
+      text-align: justify;
+    }
+  
+    .clinic-stats {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      gap: 2rem;
+      font-size: 2.2rem;
+      text-align: center;
+      margin: 24px auto 0 auto;
+    }
+  
+    .stat h2 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: #1e90ff;
+      margin: 0;
+    }
+  
+    .stat p {
+      font-size: 1rem;
+    }
+  
+    .clinic-fullwidth-image-container {
+      width: 100%;
+    }
+  
+    .clinic-fullwidth-image {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 2rem;
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);
+    }
+
+    .dental-care-section {
+      padding: 24px;
+      bottom: 0;
+    }
+  
+    .dental-title {
+      font-size: 2rem;
+      font-weight: 700;
+    }
+    
+    .dental-description {
+      margin-top: -15px;
+      max-width: 95%;
+      font-size: 1.05rem;
+      padding: 0 10px;
+      margin: 1.2rem auto 2.5rem;
+      line-height: 1.6;
+    }
+  
+    .dental-card-container {
+      flex-direction: column;
+      gap: 2.5rem;
+      align-items: center;
+    }
+  
+    .dental-card {
+      max-width: 90%;
+      padding-bottom: 110px;
+    }
+  
+    .dental-image {
+      margin-top: -15px;
+      height: 240px;
+      width: auto;
+      border-radius: 1rem;
+    }
+  
+    .dental-card-text.semi_circle {
+      bottom: -110px;
+      padding: 1.5rem 1rem;
+      width: 88%;
+      border-top-left-radius: 130px 70px;
+      border-top-right-radius: 130px 70px;
+    }
+  
+    .dental-card-text.semi_circle h3 {
+      font-size: 1.2rem;
+    }
+  
+    .dental-card-text.semi_circle p {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+  }
+  
+
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    .hero-container {
+      width: 100vw;
+      min-height: 100vh;
+      padding: 0px;
+    }
+  
+    .video-wrapper {
+      width: 100%;
+      height: 100vh;
+    }
+  
+    .hero-video {
+      width: 100%;
+      height: 550px;
+      object-fit: cover;
+    }
+  
+    .hero-overlay {
+      padding: 32px;
+      margin-bottom: 0px;
+      height: 550px;
+    }
+  
+    .hero-overlay h1 {
+      font-size: 42px;
+      margin: 180px 0px 24px 0px;
+    }
+  
+    .hero-overlay p {
+      font-size: 20px;
+      width: 80%;
+      margin-bottom: 32px;
+    }
+  
+    .hero-button {
+      margin-top: -30px;
+      font-size: 20px;
+      padding: 12px 28px;
+    }
+    
+    .image-container {
+      display: none;
+    }
+
+
+    .clinic-container {
+      padding: 32px;
+      display: flex;
+      flex-direction: column;
+      gap: 2.5rem;
+      margin-top: -180px;
+    }
+  
+    .clinic-content {
+      display: flex;
+      flex-direction: column;
+      gap: 2.5rem;
+    }
+  
+    .clinic-content h1 {
+      font-size: 2.6rem;
+      font-weight: 600;
+      text-align: left;
+    }
+  
+    .clinic-content .vishnuDental {
+      width: 100%;
+      font-size: 3.2rem;
+      font-weight: 600;
+      color: #1e90ff;
+      text-align: left;
+    }
+  
+    .clinic-text {
+      width: 100%;
+      margin-top: -20px;
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: #333;
+      text-align: justify;
+    }
+  
+    .clinic-stats {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      gap: 2.5rem;
+      font-size: 2.4rem;
+      text-align: center;
+      margin: 32px auto 0 auto;
+    }
+  
+    .stat h2 {
+      font-size: 2.4rem;
+      font-weight: 700;
+      color: #1e90ff;
+      margin: 0;
+    }
+  
+    .stat p {
+      font-size: 1.1rem;
+    }
+  
+    .clinic-fullwidth-image-container {
+      width: 100%;
+    }
+  
+    .clinic-fullwidth-image {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 2rem;
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);
+    }
+
+    .dental-care-section {
+      padding: 32px;
+      bottom: 0;
+    }
+  
+    .dental-title {
+      font-size: 2rem;
+      font-weight: 700;
+    }
+  
+    .dental-description {
+      max-width: 85%;
+      font-size: 1rem;
+      padding: 0 16px;
+      margin: 1rem auto 2.5rem;
+      line-height: 1.6;
+    }
+  
+    .dental-card-container {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+      align-items: stretch;
+    }
+  
+    .dental-card {
+      max-width: 45%;
+      padding-bottom: 120px;
+    }
+  
+    .dental-image {
+      margin-top: -10px;
+      height: 230px;
+      width: auto;
+      border-radius: 1rem;
+    }
+  
+    .dental-card-text.semi_circle {
+      bottom: -120px;
+      padding: 1.5rem 1rem;
+      width: 95%;
+      border-top-left-radius: 140px 70px;
+      border-top-right-radius: 140px 70px;
+    }
+  
+    .dental-card-text.semi_circle h3 {
+      font-size: 1.3rem;
+    }
+  
+    .dental-card-text.semi_circle p {
+      font-size: 1.05rem;
+      line-height: 1.6;
+    }
+  }
+  
+
+  @media screen and (min-width: 1025px) and (max-width: 1280px) {
+    .hero-container {
+      width: 100vw;
+      min-height: 100vh;
+      padding: 0px;
+    }
+  
+    .video-wrapper {
+      width: 100%;
+      height: 100vh;
+    }
+  
+    .hero-video {
+      width: 100%;
+      height: 600px;
+      object-fit: cover;
+    }
+  
+    .hero-overlay {
+      padding: 40px;
+      margin-bottom: 0px;
+      height: 600px;
+    }
+  
+    .hero-overlay h1 {
+      font-size: 48px;
+      margin: 80px 0px 24px 0px;
+    }
+  
+    .hero-overlay p {
+      font-size: 22px;
+      width: 75%;
+      margin-bottom: 36px;
+    }
+  
+    .hero-button {
+      margin-top: -20px;
+      font-size: 20px;
+      padding: 14px 32px;
+    }
+  
+    .image-section {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      max-width: 90vw;
+      padding: 32px;
+      margin: 500px auto 0 auto;
+      justify-content: center;
+    }
+  
+    .image-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(10px);
+      width: 100%;
+      min-height: 50px;
+      border-radius: 10px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+      padding: 0 0 20px 0;
+      transition: transform 0.3s ease-in-out;
+    }
+  
+    .image-container .image{
+      height: 200px;
+      width: 100%;
+    }
+    .image-container .image-text {
+      font-size: 18px;
+      text-align: center;
+      padding: 10px;
+    }
+
+
+    .clinic-container {
+      padding: 48px;
+      max-width: 1000px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-rows: auto auto;
+      gap: 3rem;
+    }
+  
+    .clinic-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      /* align-items: center; */
+    }
+  
+    .clinic-content h1 {
+      font-size: 2.8rem;
+      font-weight: 600;
+      text-align: left;
+    }
+  
+    .clinic-content .vishnuDental {
+      width: 100%;
+      font-size: 3.6rem;
+      font-weight: 600;
+      color: #1e90ff;
+      text-align: left;
+    }
+  
+    .clinic-text {
+      width: 100%;
+      margin-top: -6px;
+      font-size: 1.1rem;
+      font-weight: 400;
+      color: #333;
+      text-align: justify;
+    }
+  
+    .clinic-stats {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: row;
+      gap: 3rem;
+      font-size: 2.6rem;
+      margin: 40px 0 0 0;
+    }
+  
+    .stat h2 {
+      font-size: 2.6rem;
+      font-weight: 700;
+      color: #1e90ff;
+      margin: 0;
+    }
+  
+    .stat p {
+      font-size: 1.1rem;
+    }
+  
+    .clinic-fullwidth-image-container {
+      width: 100%;
+    }
+  
+    .clinic-fullwidth-image {
+      width: 100%;
+      height: 360px;
+      object-fit: cover;
+      border-radius: 2.5rem;
+      box-shadow: 0 0.5rem 1.2rem rgba(0, 0, 0, 0.25);
+    }
+
+
+    .dental-care-section {
+      padding: 48px;
+      bottom: 0;
+    }
+  
+    .dental-title {
+      font-size: 2.4rem;
+      font-weight: 700;
+      margin-top: -25px;
+    }
+  
+    .dental-description {
+      max-width: 80%;
+      font-size: 1.1rem;
+      padding: 0 24px;
+      margin: 1rem auto 3rem;
+      line-height: 1.7;
+    }
+  
+    .dental-card-container {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 2.5rem;
+      justify-content: center;
+      align-items: stretch;
+      margin-top: -20px;
+    }
+  
+    .dental-card {
+      max-width: 42%;
+      padding-bottom: 140px;
+    }
+  
+    .dental-image {
+      height: 300px;
+      width: auto;
+      border-radius: 1rem;
+    }
+  
+    .dental-card-text.semi_circle {
+      bottom: -125px;
+      padding: 1.25rem 1.5rem;
+      width: 95%;
+      border-top-left-radius: 150px 75px;
+      border-top-right-radius: 150px 75px;
+    }
+  
+    .dental-card-text.semi_circle h3 {
+      font-size: 1.4rem;
+    }
+  
+    .dental-card-text.semi_circle p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+    }
+    
+  }
+  

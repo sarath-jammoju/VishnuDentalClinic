@@ -1,0 +1,79 @@
+.testimonials {
+  background-image: url('/images/testimonials-bg.jpg'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 1;
+  padding: var(--section-padding);
+  text-align: center;
+  font-family: var(--primary-font);
+  color: white; /* Optional: change text color for contrast */
+}
+
+/* Overlay to darken background and increase text readability */
+.testimonials::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* You can adjust this */
+  z-index: -1;
+}
+
+.testimonials-container {
+  position: relative;
+  z-index: 2;
+}
+
+
+.testimonials-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #ffffff;
+  font-family: var(--primary-font);
+  font-weight: 650;
+}
+
+.testimonials-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.testimonial-card {
+  background-color: #ffffff;
+  padding: 30px;
+  max-width: 350px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+  font-family: var(--secondary-font);
+}
+
+.testimonial-card:hover {
+  transform: translateY(-8px);
+}
+
+.testimonial-message {
+  font-size: var(--paragraph-size);
+  font-style: italic;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.testimonial-name {
+  font-weight: 600;
+  font-size: var(--subheading-size);
+  margin-bottom: 5px;
+  color: #2c3e50;
+}
+
+.testimonial-title {
+  font-size: 0.95rem;
+  color: #888;
+}
