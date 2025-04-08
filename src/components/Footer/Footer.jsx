@@ -86,25 +86,26 @@ const Footer = () => {
           </div>
 
           {/* Google Map */}
-          <div className="footer-section footer-map">
-            <iframe
-              title="Vishnu Dental Clinic Location"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3833.4665718290553!2d80.1645569!3d16.0931475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4a634218289933%3A0x5be23878993f93af!2sVishnu%20Dental%20Clinic!5e0!3m2!1sen!2sin!4v1743588674243!5m2!1sen!2sin"
-              allowFullScreen=""
-              loading="lazy"
-              className="map-iframe"
-            ></iframe>
-            <div className="map-button-container">
-              <a
-                href="https://www.google.com/maps/dir/?api=1&destination=16.0931475,80.1645569"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="map-button"
-              >
-                Get Directions
-              </a>
-            </div>
-          </div>
+         {/* Google Map */}
+         <div className="footer-section footer-map">
+  <a
+    href="https://www.google.com/maps/dir/?api=1&destination=16.09329,80.16461"
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{ display: "block", width: "100%", height: "100%" }}
+  >
+    <iframe
+      title="Vishnu Dental Clinic Location"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3833.4665718290553!2d80.1645569!3d16.0931475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4a634218289933%3A0x5be23878993f93af!2sVishnu%20Dental%20Clinic!5e0!3m2!1sen!2sin!4v1743588674243!5m2!1sen!2sin"
+      allowFullScreen=""
+      loading="preload"
+      className="map-iframe"
+      style={{ pointerEvents: "none" }}
+    ></iframe>
+  </a>
+</div>
+
+
         </div>
 
         {/* Footer Bottom */}

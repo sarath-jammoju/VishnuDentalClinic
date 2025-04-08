@@ -1,5 +1,5 @@
 .testimonials {
-  background-image: url('/images/testimonials-bg.jpg'); /* Replace with your image path */
+  background-image: url('./bg-reviews.webp'); /* Replace with your image path */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -20,7 +20,7 @@
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* You can adjust this */
+  
   z-index: -1;
 }
 
@@ -33,7 +33,7 @@
 .testimonials-title {
   font-size: 2rem;
   margin-bottom: 2rem;
-  color: #ffffff;
+  color: #000000;
   font-family: var(--primary-font);
   font-weight: 650;
 }
